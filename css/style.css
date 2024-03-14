@@ -786,6 +786,9 @@ textarea::placeholder {
 }
 .form-image {
 }
+
+.form-right {
+}
 .form-right form {
 	background-color: #fff;
 	padding: 60px 45px;
@@ -877,7 +880,6 @@ textarea::placeholder {
 	margin-bottom: 25px;
 }
 .footer-info-item {
-	max-width: 192px;
 	display: flex;
 }
 .footer-info-icon {
