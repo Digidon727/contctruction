@@ -31,6 +31,13 @@
 	}
 
 	/*Services END*/
+
+	/*why START*/
+	.why-right img {
+		width: 450px;
+	}
+
+	/*why END*/
 }
 
 @media (max-width: 992px) {
@@ -173,6 +180,67 @@
 	}
 
 	/*Services END*/
+
+	/*Gallery START*/
+
+	.s-gallery {
+		padding: 60px 0;
+	}
+	.gallery-wrap {
+		grid-gap: 20px;
+	}
+
+	/*Gallery END*/
+
+	/*why START*/
+	.s-why {
+		padding: 60px 0;
+	}
+
+	.why-row {
+		display: block;
+	}
+	.why-left {
+		margin: 0 auto;
+	}
+	.why-right {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+	.why-right img {
+		width: 100%;
+	}
+
+	/*why END*/
+
+	/*Team START*/
+	.s-team {
+		padding: 60px 0;
+	}
+
+	.team-row {
+		column-gap: 20px;
+	}
+	.team-item {
+	}
+
+	.team-body {
+		padding: 15px 20px 30px 20px;
+	}
+	.team-profi {
+		font-size: 14px;
+	}
+	.team-name {
+		font-size: 18px;
+	}
+
+	/*Team END*/
+
+	/*Reviews END*/
+	.s-reviews {
+		padding: 60px 0;
+	}
+	/*Reviews END*/
 }
 
 @media (max-width: 768px) {
@@ -184,6 +252,7 @@
 
 	.center-title {
 		font-size: 32px;
+		line-height: 1.3;
 	}
 
 	.center-title::after {
@@ -279,6 +348,7 @@
 		font-size: 16px;
 	}
 	.services-row {
+		justify-content: space-evenly;
 		flex-wrap: wrap;
 		row-gap: 20px;
 	}
@@ -290,6 +360,42 @@
 	}
 
 	/*Services END*/
+
+	/*Gallery START*/
+	.gallery-wrap {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/*Gallery END*/
+
+	/*Team START*/
+
+	.team-row {
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		row-gap: 20px;
+	}
+	.team-item {
+		width: calc(50% - 10px);
+	}
+
+	/*Team END*/
+
+	/*Reviews START*/
+	.reviews-body {
+		padding: 5px 20px 20px 20px;
+	}
+	.reviews-name {
+		font-size: 18px;
+	}
+	.reviews-profi {
+		margin-bottom: 14px;
+	}
+	.reviews-comment {
+		margin-bottom: 14px;
+	}
+
+	/*Reviews END*/
 }
 
 @media (max-width: 575px) {
@@ -355,4 +461,53 @@
 	}
 
 	/*Services END*/
+
+	/*Gallery START*/
+	.s-gallery {
+		padding: 40px 0;
+	}
+	.gallery-wrap {
+		grid-gap: 15px;
+	}
+
+	/*Gallery END*/
+
+	/*why START*/
+	.why-features-icon {
+		max-width: 25px;
+	}
+	.why-features-title {
+		font-size: 16px;
+	}
+
+	.why-features-title {
+		font-size: 16px;
+	}
+	.whe-features-desc {
+		font-size: 14px;
+	}
+
+	/*why END*/
+
+	/*Team START*/
+
+	.team-item {
+		width: 100%;
+	}
+
+	/*Team END*/
+
+	.reviews-item {
+		height: auto;
+	}
+
+	/*s-partners START*/
+	.partners-row {
+		column-gap: 40px;
+		animation: move 8s linear infinite;
+	}
+	.partners-item img {
+		max-width: 200px;
+	}
+	/*s-partners END*/
 }

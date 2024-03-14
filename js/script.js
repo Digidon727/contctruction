@@ -85,12 +85,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const reviewsSwiper = new Swiper('.reviews-swiper', {
 		speed: 1000,
-		spaceBetween: 25,
-		slidesPerView: 3,
+		spaceBetween: 20,
+
 		pagination: {
 			el: ' .reviews-swiper .swiper-pagination',
 			type: 'bullets',
 			clickable: true,
+		},
+		breakpoints: {
+			// when window width is >= 320px
+			320: {
+				slidesPerView: 1,
+			},
+			// when window width is >= 480px
+			575: {
+				slidesPerView: 2,
+			},
+			// when window width is >= 640px
+			992: {
+				slidesPerView: 3,
+			},
 		},
 	})
 })
